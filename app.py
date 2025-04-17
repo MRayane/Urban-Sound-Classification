@@ -31,7 +31,7 @@ interface = gr.Interface(
     inputs=gr.Audio(type="filepath"),  # This gives you a local path to the file
     outputs="text",
     title="Urban Sound Classifier",
-    description="Upload a .wav file and get the predicted class"
+    description="Upload an audio file and get the predicted class :"
 )
 
 # Launch the app
