@@ -4,7 +4,7 @@ import numpy as np
 import tensorflow as tf
 
 # Load the model
-model = tf.keras.models.load_model("Sound_classification_model.h5")
+model = tf.keras.models.load_model("Model/Sound_classification_model.h5")
 
 # Your class labels — update this based on your training
 classes = ['Air Conditioner', 'Car Horn', 'Children Playing', 'Dog Bark', 'Drilling',
