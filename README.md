@@ -1,4 +1,4 @@
-# Urban-Sound-CLassification
+# Urban-Sound-Classification
 
 ## Project Overview
 This project demonstrates a deep learning solution for classifying urban sounds using the UrbanSound8K dataset. The goal is to build and train a neural network that can accurately categorize different types of sounds, such as car horns, dog barks, and drilling, based on audio data.
@@ -67,10 +67,23 @@ python -m venv env
 source env/bin/activate  # On Windows, use env\Scripts\activate   
 pip install -r requirements.txt  
 ``` 
+## Gradio Inference App 
+This project includes a Gradio web app that allows you to interactively test the trained model on your own audio files using a simple UI.
+### Run the App locally
+To launch the Gradio app on your machine:
+```sh
+pip install -r requirements.txt
+python app.py
+```
+Once the app runs, it will open a browser window with an interface where you can upload or record audio and get real-time predictions.
 
-## Model File
+<p align="center">
+  <img src="images/Gradio-App.png" alt="Gradio App Example" style="max-width: 70%; height: auto;">
+</p>
 
-The trained model is saved in the `Model` folder. You can use this model for inference or further fine-tuning. The model file is named `Sound_classification_model.h5` (or whatever the actual name is). To load the model, use the following code snippet:
+## Model Integration 
+
+The trained model is saved in the `Model` folder. You can use this model for inference or further fine-tuning. The model file is named `Sound_classification_model.h5`. To load the model, use the following code snippet:
 
 ```python
 from tensorflow.keras.models import load_model
